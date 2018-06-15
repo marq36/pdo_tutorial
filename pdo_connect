@@ -1,0 +1,17 @@
+<?php
+$host = "localhost";
+$user = "jack656";
+$password = "123$%^";
+$dbname = "generic";
+
+//Set DSN
+//Data Source Name
+//String with data structure for connection
+//create a variable and set to a string and pass a driver
+$dsn = 'mysql:host='. $host .';dbname=' . $dbname;
+
+//Create a PDO instance
+$pdo = new PDO($dsn, $user, $password);
+
+# PRDO QUERY
+$stmt = $pdo->query('SELECT * FROM users');
