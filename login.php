@@ -2,8 +2,7 @@
 
 session_start();
 
-if (isset($_POST['login'])) {
-   
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
    include 'pportal_config.php';
 
